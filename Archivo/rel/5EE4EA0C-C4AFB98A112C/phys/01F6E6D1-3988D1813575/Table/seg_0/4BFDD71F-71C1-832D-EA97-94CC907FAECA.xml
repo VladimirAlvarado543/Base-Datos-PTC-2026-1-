@@ -1,0 +1,72 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev20c class="oracle.dbtools.crest.model.design.storage.oracle.v20c.TableProxyOraclev20c" name="DETALLE_PEDIDO" directorySegmentName="seg_0" id="4BFDD71F-71C1-832D-EA97-94CC907FAECA">
+<createdBy>Vladi</createdBy>
+<createdTime>2026-05-07 01:53:08 UTC</createdTime>
+<ownerDesignName>Archivo</ownerDesignName>
+<schemaObject>D419BC83-C430-5114-5307-FC5BDD557635</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>2A04FA98-DA11-804A-0BA1-3AC3BC70CB76</segment>
+<tableSpace>95977398-EB2F-E220-BEB3-464B6037EC9C</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<inMemory>NO</inMemory>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="DTP_CANTIDAD" id="2D27DC68-450C-63A6-2216-433607C3330D">
+<createdBy>Vladi</createdBy>
+<createdTime>2026-05-07 01:53:08 UTC</createdTime>
+<ownerDesignName>Archivo</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="PRO_ID" id="4AF6CA3A-6A74-C196-F04E-CFE7EFBA00E4">
+<createdBy>Vladi</createdBy>
+<createdTime>2026-05-07 01:53:08 UTC</createdTime>
+<ownerDesignName>Archivo</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="DTP_ID" id="6810E3DC-C0D6-0466-0D9C-AEDCE7CCEECE">
+<createdBy>Vladi</createdBy>
+<createdTime>2026-05-07 01:53:08 UTC</createdTime>
+<ownerDesignName>Archivo</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="PED_ID" id="7AA3388A-4F48-6F71-37B1-0EFECACAA67C">
+<createdBy>Vladi</createdBy>
+<createdTime>2026-05-07 01:53:08 UTC</createdTime>
+<ownerDesignName>Archivo</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="PK_DTP_ID" id="EE76C4F5-A78E-F0BD-1A8E-184AAD417D98">
+<createdBy>Vladi</createdBy>
+<createdTime>2026-05-07 01:53:08 UTC</createdTime>
+<ownerDesignName>Archivo</ownerDesignName>
+<schemaObject>D419BC83-C430-5114-5307-FC5BDD557635</schemaObject>
+<segment>2474C465-B14B-E9D1-C158-0569C525328F</segment>
+<tableSpace>95977398-EB2F-E220-BEB3-464B6037EC9C</tableSpace>
+</IndexProxy>
+</indexProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="FK_PRO_DTP" id="1733D6BA-D59B-0ADC-4855-392AED8C9F19">
+<createdBy>Vladi</createdBy>
+<createdTime>2026-05-07 01:53:08 UTC</createdTime>
+<ownerDesignName>Archivo</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="FK_PED_DTP" id="5F2D7F78-4EFE-52AF-5ED3-2272314EEACD">
+<createdBy>Vladi</createdBy>
+<createdTime>2026-05-07 01:53:08 UTC</createdTime>
+<ownerDesignName>Archivo</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="PK_DTP_ID" id="A9F02751-8EDE-ABCF-689F-73EAA20EF8D3">
+<createdBy>Vladi</createdBy>
+<createdTime>2026-05-07 01:53:08 UTC</createdTime>
+<ownerDesignName>Archivo</ownerDesignName>
+<segment>2474C465-B14B-E9D1-C158-0569C525328F</segment>
+<tableSpace>95977398-EB2F-E220-BEB3-464B6037EC9C</tableSpace>
+<existingIndex>EE76C4F5-A78E-F0BD-1A8E-184AAD417D98</existingIndex>
+<indexSegment>2474C465-B14B-E9D1-C158-0569C525328F</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev20c>

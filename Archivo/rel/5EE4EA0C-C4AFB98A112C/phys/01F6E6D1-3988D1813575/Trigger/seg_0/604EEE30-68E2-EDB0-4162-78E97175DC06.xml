@@ -1,0 +1,33 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TriggerOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.TriggerOraclev10g" name="TRG_ACTUALIZAR_TOTAL_PEDIDO" directorySegmentName="seg_0" id="604EEE30-68E2-EDB0-4162-78E97175DC06">
+<sourceConnName>PTC PRUEBA PTC 30</sourceConnName>
+<sourceObjSchema>PTCPRUEBASSONE</sourceObjSchema>
+<sourceObjName>TRG_ACTUALIZAR_TOTAL_PEDIDO</sourceObjName>
+<createdBy>Vladi</createdBy>
+<createdTime>2026-05-07 01:53:08 UTC</createdTime>
+<ownerDesignName>Archivo</ownerDesignName>
+<actions>INSERT</actions>
+<body><![CDATA[DECLARE
+    V_PRECIO PRODUCTO.PRO_PRECIO_UNIDADES%TYPE;
+    V_DESCUENTO PRODUCTO.PRO_DESCUENTO%TYPE;
+BEGIN
+
+    SELECT PRO_PRECIO_UNIDADES, PRO_DESCUENTO
+    INTO V_PRECIO, V_DESCUENTO
+    FROM PRODUCTO
+    WHERE PRO_ID = :NEW.PRO_ID;
+
+    UPDATE PEDIDO
+    SET 
+        PED_PRECIO_TOTALES = PED_PRECIO_TOTALES + (V_PRECIO * :NEW.DTP_CANTIDAD),
+
+        PED_TOTAL_DESCUENTOS = PED_TOTAL_DESCUENTOS + (V_DESCUENTO * :NEW.DTP_CANTIDAD)
+
+    WHERE PED_ID = :NEW.PED_ID;
+
+END;
+]]></body>
+<triggerTime>AFTER</triggerTime>
+<owner>DFB578C8-CBE6-A105-2017-59DAD82A0EC4</owner>
+<table>4BFDD71F-71C1-832D-EA97-94CC907FAECA</table>
+</TriggerOraclev10g>

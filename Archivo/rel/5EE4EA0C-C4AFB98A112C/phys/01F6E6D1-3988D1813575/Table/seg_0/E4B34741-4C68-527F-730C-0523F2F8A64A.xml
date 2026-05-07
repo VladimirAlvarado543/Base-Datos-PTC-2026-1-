@@ -1,0 +1,82 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev20c class="oracle.dbtools.crest.model.design.storage.oracle.v20c.TableProxyOraclev20c" name="UBICACION" directorySegmentName="seg_0" id="E4B34741-4C68-527F-730C-0523F2F8A64A">
+<createdBy>Vladi</createdBy>
+<createdTime>2026-05-07 01:53:08 UTC</createdTime>
+<ownerDesignName>Archivo</ownerDesignName>
+<schemaObject>D419BC83-C430-5114-5307-FC5BDD557635</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>2A04FA98-DA11-804A-0BA1-3AC3BC70CB76</segment>
+<tableSpace>95977398-EB2F-E220-BEB3-464B6037EC9C</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<inMemory>NO</inMemory>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="UBI_ID" id="217894EB-5620-0F56-B99D-180FBAB1919B">
+<createdBy>Vladi</createdBy>
+<createdTime>2026-05-07 01:53:08 UTC</createdTime>
+<ownerDesignName>Archivo</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="UBI_DEPARTAMENTOS" id="29C04502-F453-C799-020A-3B18781B5FD8">
+<createdBy>Vladi</createdBy>
+<createdTime>2026-05-07 01:53:08 UTC</createdTime>
+<ownerDesignName>Archivo</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="UBI_DIRECCIONES" id="9AAC2581-5E6B-0AD3-5EA4-1C21D64EDD55">
+<createdBy>Vladi</createdBy>
+<createdTime>2026-05-07 01:53:08 UTC</createdTime>
+<ownerDesignName>Archivo</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="UBI_FECHAS" id="B157EC1C-9B89-A0B1-7FB6-B8EAC11ABFB2">
+<createdBy>Vladi</createdBy>
+<createdTime>2026-05-07 01:53:08 UTC</createdTime>
+<ownerDesignName>Archivo</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="UBI_MUNICIPIOS" id="B63CCA01-2136-6C40-158C-A009C66BE67D">
+<createdBy>Vladi</createdBy>
+<createdTime>2026-05-07 01:53:08 UTC</createdTime>
+<ownerDesignName>Archivo</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="UBI_HORARIOS" id="CCC658D7-AEDF-B7A6-2379-B14D6E60D8C6">
+<createdBy>Vladi</createdBy>
+<createdTime>2026-05-07 01:53:08 UTC</createdTime>
+<ownerDesignName>Archivo</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ENC_ID" id="D50A8CB9-6212-F4E3-B8D3-995C940356E4">
+<createdBy>Vladi</createdBy>
+<createdTime>2026-05-07 01:53:08 UTC</createdTime>
+<ownerDesignName>Archivo</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="PK_UBI_ID" id="8D79000D-21A6-3E03-EBA6-9DE297FBFB1D">
+<createdBy>Vladi</createdBy>
+<createdTime>2026-05-07 01:53:08 UTC</createdTime>
+<ownerDesignName>Archivo</ownerDesignName>
+<schemaObject>D419BC83-C430-5114-5307-FC5BDD557635</schemaObject>
+<segment>2474C465-B14B-E9D1-C158-0569C525328F</segment>
+<tableSpace>95977398-EB2F-E220-BEB3-464B6037EC9C</tableSpace>
+</IndexProxy>
+</indexProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="FK_ENC_UBI" id="3804C860-0316-1D2A-E40F-40CBAD2FC358">
+<createdBy>Vladi</createdBy>
+<createdTime>2026-05-07 01:53:08 UTC</createdTime>
+<ownerDesignName>Archivo</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="PK_UBI_ID" id="14CCEDD4-920E-BC91-B8A4-BC752CEF4727">
+<createdBy>Vladi</createdBy>
+<createdTime>2026-05-07 01:53:08 UTC</createdTime>
+<ownerDesignName>Archivo</ownerDesignName>
+<segment>2474C465-B14B-E9D1-C158-0569C525328F</segment>
+<tableSpace>95977398-EB2F-E220-BEB3-464B6037EC9C</tableSpace>
+<existingIndex>8D79000D-21A6-3E03-EBA6-9DE297FBFB1D</existingIndex>
+<indexSegment>2474C465-B14B-E9D1-C158-0569C525328F</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev20c>

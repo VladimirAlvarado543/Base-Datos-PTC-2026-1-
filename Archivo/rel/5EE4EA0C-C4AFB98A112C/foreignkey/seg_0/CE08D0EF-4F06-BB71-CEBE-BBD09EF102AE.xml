@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="CE08D0EF-4F06-BB71-CEBE-BBD09EF102AE" containerWithKeyObject="E4B34741-4C68-527F-730C-0523F2F8A64A" localFKIndex="3804C860-0316-1D2A-E40F-40CBAD2FC358" name="FK_ENC_UBI">
+<sourceConnName>PTC PRUEBA PTC 30</sourceConnName>
+<sourceObjSchema>PTCPRUEBASSONE</sourceObjSchema>
+<sourceObjName>FK_ENC_UBI</sourceObjName>
+<createdBy>Vladi</createdBy>
+<createdTime>2026-05-07 01:53:08 UTC</createdTime>
+<ownerDesignName>Archivo</ownerDesignName>
+<referredTableLongName>PTCPRUEBASSONE.ENCOMENDISTA</referredTableLongName>
+<deleteRule>CASCADE</deleteRule>
+<referredTableID>610A5A46-23D7-127D-3C21-71A8532623ED</referredTableID>
+<keyObject>A141D942-F327-C72C-F022-BDBA3BA08B17</keyObject>
+<referredKeyID>A141D942-F327-C72C-F022-BDBA3BA08B17</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>ENC_ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

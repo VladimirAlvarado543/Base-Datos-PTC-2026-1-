@@ -1,0 +1,11 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<UserOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.UserOraclev10g" name="MDSYS" directorySegmentName="seg_0" id="MDSYS">
+<sourceConnName>PTC PRUEBA PTC 30</sourceConnName>
+<sourceObjName>MDSYS</sourceObjName>
+<createdBy>Vladi</createdBy>
+<createdTime>2026-05-07 01:52:53 UTC</createdTime>
+<ownerDesignName>Archivo</ownerDesignName>
+<schemaObject>C9706652-6CFA-E825-F33B-3FDE2A097631</schemaObject>
+<nullInstance>true</nullInstance>
+<storableNullInstance>true</storableNullInstance>
+</UserOraclev10g>

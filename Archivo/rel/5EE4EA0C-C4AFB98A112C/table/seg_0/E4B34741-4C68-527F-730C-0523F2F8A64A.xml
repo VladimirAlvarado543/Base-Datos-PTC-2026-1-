@@ -1,0 +1,159 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="E4B34741-4C68-527F-730C-0523F2F8A64A" schemaObject="D419BC83-C430-5114-5307-FC5BDD557635" name="UBICACION">
+<sourceConnName>PTC PRUEBA PTC 30</sourceConnName>
+<sourceObjSchema>PTCPRUEBASSONE</sourceObjSchema>
+<sourceObjName>UBICACION</sourceObjName>
+<createdBy>Vladi</createdBy>
+<createdTime>2026-05-07 01:53:08 UTC</createdTime>
+<ownerDesignName>Archivo</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="UBI_ID" id="217894EB-5620-0F56-B99D-180FBAB1919B">
+<sourceConnName>PTC PRUEBA PTC 30</sourceConnName>
+<sourceObjSchema>UBICACION</sourceObjSchema>
+<sourceObjName>UBI_ID</sourceObjName>
+<createdBy>Vladi</createdBy>
+<createdTime>2026-05-07 01:53:08 UTC</createdTime>
+<commentInRDBMS><![CDATA[Llave primaria de la tabla Ubicacion]]></commentInRDBMS>
+<ownerDesignName>Archivo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="UBI_DEPARTAMENTOS" id="29C04502-F453-C799-020A-3B18781B5FD8">
+<sourceConnName>PTC PRUEBA PTC 30</sourceConnName>
+<sourceObjSchema>UBICACION</sourceObjSchema>
+<sourceObjName>UBI_DEPARTAMENTOS</sourceObjName>
+<createdBy>Vladi</createdBy>
+<createdTime>2026-05-07 01:53:08 UTC</createdTime>
+<commentInRDBMS><![CDATA[Departamento em el que se encuentra la direccion ]]></commentInRDBMS>
+<ownerDesignName>Archivo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15 BYTE</dataTypeSize>
+<ownDataTypeParameters>15 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="UBI_MUNICIPIOS" id="B63CCA01-2136-6C40-158C-A009C66BE67D">
+<sourceConnName>PTC PRUEBA PTC 30</sourceConnName>
+<sourceObjSchema>UBICACION</sourceObjSchema>
+<sourceObjName>UBI_MUNICIPIOS</sourceObjName>
+<createdBy>Vladi</createdBy>
+<createdTime>2026-05-07 01:53:08 UTC</createdTime>
+<commentInRDBMS><![CDATA[Municipio en el que se encuentra la direccion]]></commentInRDBMS>
+<ownerDesignName>Archivo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>25 BYTE</dataTypeSize>
+<ownDataTypeParameters>25 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="UBI_FECHAS" id="B157EC1C-9B89-A0B1-7FB6-B8EAC11ABFB2">
+<sourceConnName>PTC PRUEBA PTC 30</sourceConnName>
+<sourceObjSchema>UBICACION</sourceObjSchema>
+<sourceObjName>UBI_FECHAS</sourceObjName>
+<createdBy>Vladi</createdBy>
+<createdTime>2026-05-07 01:53:08 UTC</createdTime>
+<commentInRDBMS><![CDATA[Fecha en que se realizan entregas en esa ubicacion]]></commentInRDBMS>
+<ownerDesignName>Archivo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="UBI_HORARIOS" id="CCC658D7-AEDF-B7A6-2379-B14D6E60D8C6">
+<sourceConnName>PTC PRUEBA PTC 30</sourceConnName>
+<sourceObjSchema>UBICACION</sourceObjSchema>
+<sourceObjName>UBI_HORARIOS</sourceObjName>
+<createdBy>Vladi</createdBy>
+<createdTime>2026-05-07 01:53:08 UTC</createdTime>
+<commentInRDBMS><![CDATA[Hora y detalles]]></commentInRDBMS>
+<ownerDesignName>Archivo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15 BYTE</dataTypeSize>
+<ownDataTypeParameters>15 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ENC_ID" id="D50A8CB9-6212-F4E3-B8D3-995C940356E4">
+<sourceConnName>PTC PRUEBA PTC 30</sourceConnName>
+<sourceObjSchema>UBICACION</sourceObjSchema>
+<sourceObjName>ENC_ID</sourceObjName>
+<createdBy>Vladi</createdBy>
+<createdTime>2026-05-07 01:53:08 UTC</createdTime>
+<commentInRDBMS><![CDATA[ Llave foranea a la tabla encomendista,En caso que en la direccion un encomendista realice la entrega]]></commentInRDBMS>
+<ownerDesignName>Archivo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="CE08D0EF-4F06-BB71-CEBE-BBD09EF102AE" referredColumn="BBC50318-EE59-1FD8-C6DC-2633AE6CEDF6"/>
+</associations>
+</Column>
+<Column name="UBI_DIRECCIONES" id="9AAC2581-5E6B-0AD3-5EA4-1C21D64EDD55">
+<sourceConnName>PTC PRUEBA PTC 30</sourceConnName>
+<sourceObjSchema>UBICACION</sourceObjSchema>
+<sourceObjName>UBI_DIRECCIONES</sourceObjName>
+<createdBy>Vladi</createdBy>
+<createdTime>2026-05-07 01:53:08 UTC</createdTime>
+<commentInRDBMS><![CDATA[Direccion de la ubicacion de entrega]]></commentInRDBMS>
+<ownerDesignName>Archivo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>300 BYTE</dataTypeSize>
+<ownDataTypeParameters>300 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="14CCEDD4-920E-BC91-B8A4-BC752CEF4727" name="PK_UBI_ID">
+<sourceConnName>PTC PRUEBA PTC 30</sourceConnName>
+<sourceObjSchema>PTCPRUEBASSONE</sourceObjSchema>
+<sourceObjName>PK_UBI_ID</sourceObjName>
+<createdBy>Vladi</createdBy>
+<createdTime>2026-05-07 01:53:08 UTC</createdTime>
+<ownerDesignName>Archivo</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="217894EB-5620-0F56-B99D-180FBAB1919B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="8D79000D-21A6-3E03-EBA6-9DE297FBFB1D" schemaObject="D419BC83-C430-5114-5307-FC5BDD557635" name="PK_UBI_ID">
+<sourceConnName>PTC PRUEBA PTC 30</sourceConnName>
+<sourceObjSchema>PTCPRUEBASSONE</sourceObjSchema>
+<sourceObjName>PK_UBI_ID</sourceObjName>
+<createdBy>Vladi</createdBy>
+<createdTime>2026-05-07 01:53:08 UTC</createdTime>
+<ownerDesignName>Archivo</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="217894EB-5620-0F56-B99D-180FBAB1919B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="3804C860-0316-1D2A-E40F-40CBAD2FC358" name="FK_ENC_UBI">
+<createdBy>Vladi</createdBy>
+<createdTime>2026-05-07 01:53:08 UTC</createdTime>
+<ownerDesignName>Archivo</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D50A8CB9-6212-F4E3-B8D3-995C940356E4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

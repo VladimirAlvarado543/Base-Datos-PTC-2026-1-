@@ -1,0 +1,113 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="B3B14799-AADF-5F9B-5640-9E59F7AF85BC" schemaObject="D419BC83-C430-5114-5307-FC5BDD557635" name="UBICACION_CLIENTE">
+<sourceConnName>PTC PRUEBA PTC 30</sourceConnName>
+<sourceObjSchema>PTCPRUEBASSONE</sourceObjSchema>
+<sourceObjName>UBICACION_CLIENTE</sourceObjName>
+<createdBy>Vladi</createdBy>
+<createdTime>2026-05-07 01:53:08 UTC</createdTime>
+<ownerDesignName>Archivo</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="UBC_ID" id="AA6A3BEA-E24B-903F-FA19-96D4A43A8DD6">
+<sourceConnName>PTC PRUEBA PTC 30</sourceConnName>
+<sourceObjSchema>UBICACION_CLIENTE</sourceObjSchema>
+<sourceObjName>UBC_ID</sourceObjName>
+<createdBy>Vladi</createdBy>
+<createdTime>2026-05-07 01:53:08 UTC</createdTime>
+<commentInRDBMS><![CDATA[Llave primaria de la tabla Ubicacion_Cliente]]></commentInRDBMS>
+<ownerDesignName>Archivo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="UBI_ID" id="5021E471-8A79-F46C-84F8-C945290D8ECB">
+<sourceConnName>PTC PRUEBA PTC 30</sourceConnName>
+<sourceObjSchema>UBICACION_CLIENTE</sourceObjSchema>
+<sourceObjName>UBI_ID</sourceObjName>
+<createdBy>Vladi</createdBy>
+<createdTime>2026-05-07 01:53:08 UTC</createdTime>
+<commentInRDBMS><![CDATA[Llave foranea a la tabla ubicacion]]></commentInRDBMS>
+<ownerDesignName>Archivo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="9638BB92-78B0-C62A-BED6-222F20B49010" referredColumn="217894EB-5620-0F56-B99D-180FBAB1919B"/>
+</associations>
+</Column>
+<Column name="CLI_ID" id="B2F34846-773E-B7F0-F5F6-81402870D03A">
+<sourceConnName>PTC PRUEBA PTC 30</sourceConnName>
+<sourceObjSchema>UBICACION_CLIENTE</sourceObjSchema>
+<sourceObjName>CLI_ID</sourceObjName>
+<createdBy>Vladi</createdBy>
+<createdTime>2026-05-07 01:53:08 UTC</createdTime>
+<commentInRDBMS><![CDATA[Llave foranea a la tabla Cliente]]></commentInRDBMS>
+<ownerDesignName>Archivo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="CA050AF7-8033-AF24-8E7E-5BF50C168D35" referredColumn="460E139A-F059-9341-8032-B7779B0BEBB2"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="4C4AE0F0-A998-CD16-383D-3AC5E537D18B" name="PK_UBC_ID">
+<sourceConnName>PTC PRUEBA PTC 30</sourceConnName>
+<sourceObjSchema>PTCPRUEBASSONE</sourceObjSchema>
+<sourceObjName>PK_UBC_ID</sourceObjName>
+<createdBy>Vladi</createdBy>
+<createdTime>2026-05-07 01:53:08 UTC</createdTime>
+<ownerDesignName>Archivo</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AA6A3BEA-E24B-903F-FA19-96D4A43A8DD6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="CB36D1EB-D496-7215-B875-50462333808B" schemaObject="D419BC83-C430-5114-5307-FC5BDD557635" name="PK_UBC_ID">
+<sourceConnName>PTC PRUEBA PTC 30</sourceConnName>
+<sourceObjSchema>PTCPRUEBASSONE</sourceObjSchema>
+<sourceObjName>PK_UBC_ID</sourceObjName>
+<createdBy>Vladi</createdBy>
+<createdTime>2026-05-07 01:53:08 UTC</createdTime>
+<ownerDesignName>Archivo</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AA6A3BEA-E24B-903F-FA19-96D4A43A8DD6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="EF47032D-5A5F-CAA0-B183-33EA8FB1C12B" name="FK_CLI_UBC">
+<createdBy>Vladi</createdBy>
+<createdTime>2026-05-07 01:53:08 UTC</createdTime>
+<ownerDesignName>Archivo</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B2F34846-773E-B7F0-F5F6-81402870D03A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="1DE3986E-6F26-D1CE-D005-ECA6113D0345" name="FK_UBI_UBC">
+<createdBy>Vladi</createdBy>
+<createdTime>2026-05-07 01:53:08 UTC</createdTime>
+<ownerDesignName>Archivo</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5021E471-8A79-F46C-84F8-C945290D8ECB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

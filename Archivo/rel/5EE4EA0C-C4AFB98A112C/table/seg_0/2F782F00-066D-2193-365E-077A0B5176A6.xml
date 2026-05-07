@@ -1,0 +1,268 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="2F782F00-066D-2193-365E-077A0B5176A6" schemaObject="D419BC83-C430-5114-5307-FC5BDD557635" name="PRODUCTO">
+<sourceConnName>PTC PRUEBA PTC 30</sourceConnName>
+<sourceObjSchema>PTCPRUEBASSONE</sourceObjSchema>
+<sourceObjName>PRODUCTO</sourceObjName>
+<createdBy>Vladi</createdBy>
+<createdTime>2026-05-07 01:53:08 UTC</createdTime>
+<ownerDesignName>Archivo</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="PRO_ID" id="17CB49C2-5DE3-103F-4FFD-56737A4A92B9">
+<sourceConnName>PTC PRUEBA PTC 30</sourceConnName>
+<sourceObjSchema>PRODUCTO</sourceObjSchema>
+<sourceObjName>PRO_ID</sourceObjName>
+<createdBy>Vladi</createdBy>
+<createdTime>2026-05-07 01:53:08 UTC</createdTime>
+<commentInRDBMS><![CDATA[Llave Primaria de la tabla Productos]]></commentInRDBMS>
+<ownerDesignName>Archivo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PRO_NOMBRES" id="07BCB751-9EE3-8231-D6AC-A18683103936">
+<sourceConnName>PTC PRUEBA PTC 30</sourceConnName>
+<sourceObjSchema>PRODUCTO</sourceObjSchema>
+<sourceObjName>PRO_NOMBRES</sourceObjName>
+<createdBy>Vladi</createdBy>
+<createdTime>2026-05-07 01:53:08 UTC</createdTime>
+<commentInRDBMS><![CDATA[Nombre del producto]]></commentInRDBMS>
+<ownerDesignName>Archivo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>150 BYTE</dataTypeSize>
+<ownDataTypeParameters>150 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PRO_DESCRIPCIONES" id="4F898085-B79C-1D31-C073-BCDB2E3ADB05">
+<sourceConnName>PTC PRUEBA PTC 30</sourceConnName>
+<sourceObjSchema>PRODUCTO</sourceObjSchema>
+<sourceObjName>PRO_DESCRIPCIONES</sourceObjName>
+<createdBy>Vladi</createdBy>
+<createdTime>2026-05-07 01:53:08 UTC</createdTime>
+<commentInRDBMS><![CDATA[Descripcion del producto]]></commentInRDBMS>
+<ownerDesignName>Archivo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>350 BYTE</dataTypeSize>
+<ownDataTypeParameters>350 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PRO_STOCK" id="278FABD9-4BBF-D439-B71F-B18F0D321EF7">
+<sourceConnName>PTC PRUEBA PTC 30</sourceConnName>
+<sourceObjSchema>PRODUCTO</sourceObjSchema>
+<sourceObjName>PRO_STOCK</sourceObjName>
+<createdBy>Vladi</createdBy>
+<createdTime>2026-05-07 01:53:08 UTC</createdTime>
+<commentInRDBMS><![CDATA[Cantidad en stock]]></commentInRDBMS>
+<ownerDesignName>Archivo</ownerDesignName>
+<constraintName>SYS_C008524</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="PRO_STOCK&gt;=0"/>
+<implementationDef dbType="Oracle Database 21c" definition="PRO_STOCK&gt;=0"/>
+</checkConstraint>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PRO_PRECIO_UNIDADES" id="CDE5A75A-4935-B998-8615-260DA52DBDE3">
+<sourceConnName>PTC PRUEBA PTC 30</sourceConnName>
+<sourceObjSchema>PRODUCTO</sourceObjSchema>
+<sourceObjName>PRO_PRECIO_UNIDADES</sourceObjName>
+<createdBy>Vladi</createdBy>
+<createdTime>2026-05-07 01:53:08 UTC</createdTime>
+<commentInRDBMS><![CDATA[Precio por unidad]]></commentInRDBMS>
+<ownerDesignName>Archivo</ownerDesignName>
+<constraintName>SYS_C008525</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="PRO_PRECIO_UNIDADES&gt;=0"/>
+<implementationDef dbType="Oracle Database 21c" definition="PRO_PRECIO_UNIDADES&gt;=0"/>
+</checkConstraint>
+<ownDataTypeParameters>,10,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PRO_DESCUENTO" id="8AEB8A97-40BF-6499-DEE1-D080FC0B297A">
+<sourceConnName>PTC PRUEBA PTC 30</sourceConnName>
+<sourceObjSchema>PRODUCTO</sourceObjSchema>
+<sourceObjName>PRO_DESCUENTO</sourceObjName>
+<createdBy>Vladi</createdBy>
+<createdTime>2026-05-07 01:53:08 UTC</createdTime>
+<commentInRDBMS><![CDATA[Descuento que le apique al producto]]></commentInRDBMS>
+<ownerDesignName>Archivo</ownerDesignName>
+<constraintName>SYS_C008526</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="PRO_DESCUENTO&gt;=0"/>
+<implementationDef dbType="Oracle Database 21c" definition="PRO_DESCUENTO&gt;=0"/>
+</checkConstraint>
+<defaultValue>0</defaultValue>
+<ownDataTypeParameters>,10,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PRO_TALLA" id="C9C47DFB-62C2-0733-402E-A0D0353EA0A7">
+<sourceConnName>PTC PRUEBA PTC 30</sourceConnName>
+<sourceObjSchema>PRODUCTO</sourceObjSchema>
+<sourceObjName>PRO_TALLA</sourceObjName>
+<createdBy>Vladi</createdBy>
+<createdTime>2026-05-07 01:53:08 UTC</createdTime>
+<commentInRDBMS><![CDATA[Talla del producto]]></commentInRDBMS>
+<ownerDesignName>Archivo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>8 BYTE</dataTypeSize>
+<ownDataTypeParameters>8 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PRO_ESTADO" id="34CEAB08-BEFC-3716-2C28-7BD9829BA970">
+<sourceConnName>PTC PRUEBA PTC 30</sourceConnName>
+<sourceObjSchema>PRODUCTO</sourceObjSchema>
+<sourceObjName>PRO_ESTADO</sourceObjName>
+<createdBy>Vladi</createdBy>
+<createdTime>2026-05-07 01:53:08 UTC</createdTime>
+<commentInRDBMS><![CDATA[Estado del producto, activo es cuando esta a la venta, inactivo es en caso no haya productos en stock o no puedan cumplir con la entrega o elaboracion del producto en ese momoento]]></commentInRDBMS>
+<ownerDesignName>Archivo</ownerDesignName>
+<constraintName>CK_ESTADO</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>24 BYTE</dataTypeSize>
+<listOfValues>
+<valueDef value="&apos;Activo&apos;" description=""/>
+<valueDef value="&apos;Inactivo&apos;" description=""/>
+</listOfValues>
+<ownDataTypeParameters>24 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CTT_ID" id="81A84309-6E3B-9CEB-0A80-19CA1F85D97F">
+<sourceConnName>PTC PRUEBA PTC 30</sourceConnName>
+<sourceObjSchema>PRODUCTO</sourceObjSchema>
+<sourceObjName>CTT_ID</sourceObjName>
+<createdBy>Vladi</createdBy>
+<createdTime>2026-05-07 01:53:08 UTC</createdTime>
+<commentInRDBMS><![CDATA[Llave foranea a la tabla Categoria_Tematica]]></commentInRDBMS>
+<ownerDesignName>Archivo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="C20D9576-7FEA-BBE9-6063-984682BCB08A" referredColumn="789AE49B-C321-A5B9-30E4-1C0B3481AC04"/>
+</associations>
+</Column>
+<Column name="CTR_ID" id="FED52264-B61A-07BC-2FF7-E8B75299DA76">
+<sourceConnName>PTC PRUEBA PTC 30</sourceConnName>
+<sourceObjSchema>PRODUCTO</sourceObjSchema>
+<sourceObjName>CTR_ID</sourceObjName>
+<createdBy>Vladi</createdBy>
+<createdTime>2026-05-07 01:53:08 UTC</createdTime>
+<commentInRDBMS><![CDATA[Llave foranea a la tabla Categoria_Ropa]]></commentInRDBMS>
+<ownerDesignName>Archivo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="E90FFFE6-3E6B-FC4B-665A-25CDC28663EA" referredColumn="FD5CDE2F-E6C0-24DF-CA8C-156D0D4D05D7"/>
+</associations>
+</Column>
+<Column name="MTR_ID" id="277BA8BC-43E1-9A4D-AE00-601D7419B0D0">
+<sourceConnName>PTC PRUEBA PTC 30</sourceConnName>
+<sourceObjSchema>PRODUCTO</sourceObjSchema>
+<sourceObjName>MTR_ID</sourceObjName>
+<createdBy>Vladi</createdBy>
+<createdTime>2026-05-07 01:53:08 UTC</createdTime>
+<commentInRDBMS><![CDATA[Llave foranea a la tabla Materiales]]></commentInRDBMS>
+<ownerDesignName>Archivo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="3AE836CA-8C5D-359C-2325-B33D10601BBC" referredColumn="F01772F9-F708-39A7-4BAC-C95F7E804DF8"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="53450664-FB93-7F95-7BC8-CE9AA2D391F2" name="PK_PRO_ID">
+<sourceConnName>PTC PRUEBA PTC 30</sourceConnName>
+<sourceObjSchema>PTCPRUEBASSONE</sourceObjSchema>
+<sourceObjName>PK_PRO_ID</sourceObjName>
+<createdBy>Vladi</createdBy>
+<createdTime>2026-05-07 01:53:08 UTC</createdTime>
+<ownerDesignName>Archivo</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="17CB49C2-5DE3-103F-4FFD-56737A4A92B9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="75693062-6D4E-E927-9B3E-EBB941C411AB" schemaObject="D419BC83-C430-5114-5307-FC5BDD557635" name="PK_PRO_ID">
+<sourceConnName>PTC PRUEBA PTC 30</sourceConnName>
+<sourceObjSchema>PTCPRUEBASSONE</sourceObjSchema>
+<sourceObjName>PK_PRO_ID</sourceObjName>
+<createdBy>Vladi</createdBy>
+<createdTime>2026-05-07 01:53:08 UTC</createdTime>
+<ownerDesignName>Archivo</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="17CB49C2-5DE3-103F-4FFD-56737A4A92B9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="FF4D92CD-AE5E-E29D-BD34-30E30BDBB805" name="FK_CTR_PRO">
+<createdBy>Vladi</createdBy>
+<createdTime>2026-05-07 01:53:08 UTC</createdTime>
+<ownerDesignName>Archivo</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FED52264-B61A-07BC-2FF7-E8B75299DA76"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="6B094253-E22C-B358-9648-CE05D143AA54" name="FK_CTT_PRO">
+<createdBy>Vladi</createdBy>
+<createdTime>2026-05-07 01:53:08 UTC</createdTime>
+<ownerDesignName>Archivo</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="81A84309-6E3B-9CEB-0A80-19CA1F85D97F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="848E9E12-5510-4ADC-45BF-C2CC4D7216A7" name="FK_MTR_PRO">
+<createdBy>Vladi</createdBy>
+<createdTime>2026-05-07 01:53:08 UTC</createdTime>
+<ownerDesignName>Archivo</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="277BA8BC-43E1-9A4D-AE00-601D7419B0D0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,189 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="238F3090-62E9-2EEC-43D1-218404DC9F48" schemaObject="D419BC83-C430-5114-5307-FC5BDD557635" name="USUARIO">
+<sourceConnName>PTC PRUEBA PTC 30</sourceConnName>
+<sourceObjSchema>PTCPRUEBASSONE</sourceObjSchema>
+<sourceObjName>USUARIO</sourceObjName>
+<createdBy>Vladi</createdBy>
+<createdTime>2026-05-07 01:53:08 UTC</createdTime>
+<ownerDesignName>Archivo</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="USR_ID" id="AC6D037C-72CD-90BD-A9F4-2787B7BB4FCE">
+<sourceConnName>PTC PRUEBA PTC 30</sourceConnName>
+<sourceObjSchema>USUARIO</sourceObjSchema>
+<sourceObjName>USR_ID</sourceObjName>
+<createdBy>Vladi</createdBy>
+<createdTime>2026-05-07 01:53:08 UTC</createdTime>
+<commentInRDBMS><![CDATA[Llave primaria de la tabla usuario]]></commentInRDBMS>
+<ownerDesignName>Archivo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="USR_NOMBRES" id="B8C1AF7D-BE94-2FD4-A8C1-D97318E5F96D">
+<sourceConnName>PTC PRUEBA PTC 30</sourceConnName>
+<sourceObjSchema>USUARIO</sourceObjSchema>
+<sourceObjName>USR_NOMBRES</sourceObjName>
+<createdBy>Vladi</createdBy>
+<createdTime>2026-05-07 01:53:08 UTC</createdTime>
+<commentInRDBMS><![CDATA[Nombre del usuario]]></commentInRDBMS>
+<ownerDesignName>Archivo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 BYTE</dataTypeSize>
+<ownDataTypeParameters>100 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="USR_APELLIDOS" id="11639F34-2B3B-80C4-852B-14A885D60D4A">
+<sourceConnName>PTC PRUEBA PTC 30</sourceConnName>
+<sourceObjSchema>USUARIO</sourceObjSchema>
+<sourceObjName>USR_APELLIDOS</sourceObjName>
+<createdBy>Vladi</createdBy>
+<createdTime>2026-05-07 01:53:08 UTC</createdTime>
+<commentInRDBMS><![CDATA[Apellidos del usuario]]></commentInRDBMS>
+<ownerDesignName>Archivo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 BYTE</dataTypeSize>
+<ownDataTypeParameters>100 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="USR_CORREOS" id="B699CD05-8C79-1C43-D45B-B74763A26238">
+<sourceConnName>PTC PRUEBA PTC 30</sourceConnName>
+<sourceObjSchema>USUARIO</sourceObjSchema>
+<sourceObjName>USR_CORREOS</sourceObjName>
+<createdBy>Vladi</createdBy>
+<createdTime>2026-05-07 01:53:08 UTC</createdTime>
+<commentInRDBMS><![CDATA[Correo electronico del usuario, sera nesesesario para que pueda iniciar sesion]]></commentInRDBMS>
+<ownerDesignName>Archivo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>150 BYTE</dataTypeSize>
+<ownDataTypeParameters>150 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="USR_CONTRASENIAS" id="8D02DA05-BE5E-27B6-2C46-5FC26484C869">
+<sourceConnName>PTC PRUEBA PTC 30</sourceConnName>
+<sourceObjSchema>USUARIO</sourceObjSchema>
+<sourceObjName>USR_CONTRASENIAS</sourceObjName>
+<createdBy>Vladi</createdBy>
+<createdTime>2026-05-07 01:53:08 UTC</createdTime>
+<commentInRDBMS><![CDATA[Contraseña unica que tendra el usuario]]></commentInRDBMS>
+<ownerDesignName>Archivo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>64 BYTE</dataTypeSize>
+<ownDataTypeParameters>64 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="USR_TOKEN_RECUPERACION" id="0A2B3A10-B1B1-A905-FFBF-930371DC3EAA">
+<sourceConnName>PTC PRUEBA PTC 30</sourceConnName>
+<sourceObjSchema>USUARIO</sourceObjSchema>
+<sourceObjName>USR_TOKEN_RECUPERACION</sourceObjName>
+<createdBy>Vladi</createdBy>
+<createdTime>2026-05-07 01:53:08 UTC</createdTime>
+<commentInRDBMS><![CDATA[Token de recuperacion de cuenta]]></commentInRDBMS>
+<ownerDesignName>Archivo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>6 BYTE</dataTypeSize>
+<ownDataTypeParameters>6 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="USR_TOKEN_EXPIRACION" id="A0AF9C78-FCFC-8A92-B8F1-4F74E9E25CD3">
+<sourceConnName>PTC PRUEBA PTC 30</sourceConnName>
+<sourceObjSchema>USUARIO</sourceObjSchema>
+<sourceObjName>USR_TOKEN_EXPIRACION</sourceObjName>
+<createdBy>Vladi</createdBy>
+<createdTime>2026-05-07 01:53:08 UTC</createdTime>
+<commentInRDBMS><![CDATA[Tiempo de duracion del token de recuperacion]]></commentInRDBMS>
+<ownerDesignName>Archivo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ROL_ID" id="E590A0A8-7A11-3A0D-4854-C8E3717CBDB6">
+<sourceConnName>PTC PRUEBA PTC 30</sourceConnName>
+<sourceObjSchema>USUARIO</sourceObjSchema>
+<sourceObjName>ROL_ID</sourceObjName>
+<createdBy>Vladi</createdBy>
+<createdTime>2026-05-07 01:53:08 UTC</createdTime>
+<commentInRDBMS><![CDATA[Llave foranea a la tabla rol]]></commentInRDBMS>
+<ownerDesignName>Archivo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="8A7DDAF4-B363-E164-4504-3ABFA0CEB190" referredColumn="9A04B3DC-9CBC-1781-5B8F-1D4D005760D2"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="F8D0F358-BA6D-6B1C-B7DD-E37B6E49F0FC" name="PK_USR_ID">
+<sourceConnName>PTC PRUEBA PTC 30</sourceConnName>
+<sourceObjSchema>PTCPRUEBASSONE</sourceObjSchema>
+<sourceObjName>PK_USR_ID</sourceObjName>
+<createdBy>Vladi</createdBy>
+<createdTime>2026-05-07 01:53:08 UTC</createdTime>
+<ownerDesignName>Archivo</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AC6D037C-72CD-90BD-A9F4-2787B7BB4FCE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="5D86E8D4-941E-BD5F-B4B0-312D59C6E48F" schemaObject="D419BC83-C430-5114-5307-FC5BDD557635" name="USUARIO_USR_CORREOS_UN">
+<sourceConnName>PTC PRUEBA PTC 30</sourceConnName>
+<sourceObjSchema>PTCPRUEBASSONE</sourceObjSchema>
+<sourceObjName>SYS_C008478</sourceObjName>
+<createdBy>Vladi</createdBy>
+<createdTime>2026-05-07 01:53:08 UTC</createdTime>
+<ownerDesignName>Archivo</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B699CD05-8C79-1C43-D45B-B74763A26238"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="47624412-AC2C-695A-9582-DE93D1835EE0" schemaObject="D419BC83-C430-5114-5307-FC5BDD557635" name="PK_USR_ID">
+<sourceConnName>PTC PRUEBA PTC 30</sourceConnName>
+<sourceObjSchema>PTCPRUEBASSONE</sourceObjSchema>
+<sourceObjName>PK_USR_ID</sourceObjName>
+<createdBy>Vladi</createdBy>
+<createdTime>2026-05-07 01:53:08 UTC</createdTime>
+<ownerDesignName>Archivo</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AC6D037C-72CD-90BD-A9F4-2787B7BB4FCE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="CBBB7037-2F4A-7FA1-BD86-3421E4297C01" name="FK_ROL_USR">
+<createdBy>Vladi</createdBy>
+<createdTime>2026-05-07 01:53:08 UTC</createdTime>
+<ownerDesignName>Archivo</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E590A0A8-7A11-3A0D-4854-C8E3717CBDB6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

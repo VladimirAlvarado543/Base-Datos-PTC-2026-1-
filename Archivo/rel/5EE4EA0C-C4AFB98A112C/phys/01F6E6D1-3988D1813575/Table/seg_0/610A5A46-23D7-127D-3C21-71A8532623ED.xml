@@ -1,0 +1,55 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev20c class="oracle.dbtools.crest.model.design.storage.oracle.v20c.TableProxyOraclev20c" name="ENCOMENDISTA" directorySegmentName="seg_0" id="610A5A46-23D7-127D-3C21-71A8532623ED">
+<createdBy>Vladi</createdBy>
+<createdTime>2026-05-07 01:53:08 UTC</createdTime>
+<ownerDesignName>Archivo</ownerDesignName>
+<schemaObject>D419BC83-C430-5114-5307-FC5BDD557635</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>2A04FA98-DA11-804A-0BA1-3AC3BC70CB76</segment>
+<tableSpace>95977398-EB2F-E220-BEB3-464B6037EC9C</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<inMemory>NO</inMemory>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="ENC_NOMBRES" id="AA75AACE-F38E-716B-6A08-4DFBCF53304A">
+<createdBy>Vladi</createdBy>
+<createdTime>2026-05-07 01:53:08 UTC</createdTime>
+<ownerDesignName>Archivo</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ENC_ID" id="BBC50318-EE59-1FD8-C6DC-2633AE6CEDF6">
+<createdBy>Vladi</createdBy>
+<createdTime>2026-05-07 01:53:08 UTC</createdTime>
+<ownerDesignName>Archivo</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ENC_CONTACTOS" id="C8E959F9-89BA-6485-FFE3-90F505EBB60B">
+<createdBy>Vladi</createdBy>
+<createdTime>2026-05-07 01:53:08 UTC</createdTime>
+<ownerDesignName>Archivo</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="PK_ENC_ID" id="5B31AE6F-2E44-8BE4-405C-56ABCB2236CB">
+<createdBy>Vladi</createdBy>
+<createdTime>2026-05-07 01:53:08 UTC</createdTime>
+<ownerDesignName>Archivo</ownerDesignName>
+<schemaObject>D419BC83-C430-5114-5307-FC5BDD557635</schemaObject>
+<segment>2474C465-B14B-E9D1-C158-0569C525328F</segment>
+<tableSpace>95977398-EB2F-E220-BEB3-464B6037EC9C</tableSpace>
+</IndexProxy>
+</indexProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="PK_ENC_ID" id="A141D942-F327-C72C-F022-BDBA3BA08B17">
+<createdBy>Vladi</createdBy>
+<createdTime>2026-05-07 01:53:08 UTC</createdTime>
+<ownerDesignName>Archivo</ownerDesignName>
+<segment>2474C465-B14B-E9D1-C158-0569C525328F</segment>
+<tableSpace>95977398-EB2F-E220-BEB3-464B6037EC9C</tableSpace>
+<existingIndex>5B31AE6F-2E44-8BE4-405C-56ABCB2236CB</existingIndex>
+<indexSegment>2474C465-B14B-E9D1-C158-0569C525328F</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev20c>

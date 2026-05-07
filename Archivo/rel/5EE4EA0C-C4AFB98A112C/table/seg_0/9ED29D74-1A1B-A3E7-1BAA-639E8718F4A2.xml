@@ -1,0 +1,111 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="9ED29D74-1A1B-A3E7-1BAA-639E8718F4A2" schemaObject="D419BC83-C430-5114-5307-FC5BDD557635" name="PRODUCTO_GUARDADO">
+<sourceConnName>PTC PRUEBA PTC 30</sourceConnName>
+<sourceObjSchema>PTCPRUEBASSONE</sourceObjSchema>
+<sourceObjName>PRODUCTO_GUARDADO</sourceObjName>
+<createdBy>Vladi</createdBy>
+<createdTime>2026-05-07 01:53:08 UTC</createdTime>
+<ownerDesignName>Archivo</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="PRG_ID" id="7CA00F0E-6A25-42F9-D4E5-8C8D434F8351">
+<sourceConnName>PTC PRUEBA PTC 30</sourceConnName>
+<sourceObjSchema>PRODUCTO_GUARDADO</sourceObjSchema>
+<sourceObjName>PRG_ID</sourceObjName>
+<createdBy>Vladi</createdBy>
+<createdTime>2026-05-07 01:53:08 UTC</createdTime>
+<commentInRDBMS><![CDATA[Llave primaria de la tabla Producto_Guardado]]></commentInRDBMS>
+<ownerDesignName>Archivo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PRO_ID" id="2B3F21CF-6278-6D02-34A1-176A324290E5">
+<sourceConnName>PTC PRUEBA PTC 30</sourceConnName>
+<sourceObjSchema>PRODUCTO_GUARDADO</sourceObjSchema>
+<sourceObjName>PRO_ID</sourceObjName>
+<createdBy>Vladi</createdBy>
+<createdTime>2026-05-07 01:53:08 UTC</createdTime>
+<commentInRDBMS><![CDATA[Llave foranea a la tabla producto]]></commentInRDBMS>
+<ownerDesignName>Archivo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="E9F76F78-53F8-BF6A-0C2E-45E22D44060D" referredColumn="17CB49C2-5DE3-103F-4FFD-56737A4A92B9"/>
+</associations>
+</Column>
+<Column name="CLI_ID" id="AED89782-1779-481B-1CFC-D75E6D7FC104">
+<sourceConnName>PTC PRUEBA PTC 30</sourceConnName>
+<sourceObjSchema>PRODUCTO_GUARDADO</sourceObjSchema>
+<sourceObjName>CLI_ID</sourceObjName>
+<createdBy>Vladi</createdBy>
+<createdTime>2026-05-07 01:53:08 UTC</createdTime>
+<commentInRDBMS><![CDATA[Llave foranea a la tabla Cliente]]></commentInRDBMS>
+<ownerDesignName>Archivo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="92028CD1-825F-DDC7-6EAA-B9BC42723C35" referredColumn="460E139A-F059-9341-8032-B7779B0BEBB2"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="33C7099D-C656-4669-12FA-F32C29DB2B37" name="PK_PRG_ID">
+<sourceConnName>PTC PRUEBA PTC 30</sourceConnName>
+<sourceObjSchema>PTCPRUEBASSONE</sourceObjSchema>
+<sourceObjName>PK_PRG_ID</sourceObjName>
+<createdBy>Vladi</createdBy>
+<createdTime>2026-05-07 01:53:08 UTC</createdTime>
+<ownerDesignName>Archivo</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7CA00F0E-6A25-42F9-D4E5-8C8D434F8351"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="5AC088E6-C6A3-5D1D-6AE6-9F82DF28A93A" schemaObject="D419BC83-C430-5114-5307-FC5BDD557635" name="PK_PRG_ID">
+<sourceConnName>PTC PRUEBA PTC 30</sourceConnName>
+<sourceObjSchema>PTCPRUEBASSONE</sourceObjSchema>
+<sourceObjName>PK_PRG_ID</sourceObjName>
+<createdBy>Vladi</createdBy>
+<createdTime>2026-05-07 01:53:08 UTC</createdTime>
+<ownerDesignName>Archivo</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7CA00F0E-6A25-42F9-D4E5-8C8D434F8351"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A36D3BE0-5CE6-70CA-6969-237E3C93746B" name="FK_CLI_PRG">
+<createdBy>Vladi</createdBy>
+<createdTime>2026-05-07 01:53:08 UTC</createdTime>
+<ownerDesignName>Archivo</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AED89782-1779-481B-1CFC-D75E6D7FC104"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="749AB0B3-865D-D6B3-D088-B7D147F55C2E" name="FK_PRO_PRG">
+<createdBy>Vladi</createdBy>
+<createdTime>2026-05-07 01:53:08 UTC</createdTime>
+<ownerDesignName>Archivo</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2B3F21CF-6278-6D02-34A1-176A324290E5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,78 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev20c class="oracle.dbtools.crest.model.design.storage.oracle.v20c.TableProxyOraclev20c" name="CREDENCIALES_CLIENTE" directorySegmentName="seg_0" id="83F5F5A0-2AC6-0553-37B4-A98142D997F9">
+<createdBy>Vladi</createdBy>
+<createdTime>2026-05-07 01:53:08 UTC</createdTime>
+<ownerDesignName>Archivo</ownerDesignName>
+<schemaObject>D419BC83-C430-5114-5307-FC5BDD557635</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>2A04FA98-DA11-804A-0BA1-3AC3BC70CB76</segment>
+<tableSpace>95977398-EB2F-E220-BEB3-464B6037EC9C</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<inMemory>NO</inMemory>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="CRC_TOKEN_EXPIRACION" id="00594A3A-58E8-C66B-1EF3-61F82E8A18B4">
+<createdBy>Vladi</createdBy>
+<createdTime>2026-05-07 01:53:08 UTC</createdTime>
+<ownerDesignName>Archivo</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="CLI_ID" id="50778F86-3218-9D95-143F-2AF95418C067">
+<createdBy>Vladi</createdBy>
+<createdTime>2026-05-07 01:53:08 UTC</createdTime>
+<ownerDesignName>Archivo</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="CRC_TOKEN" id="578E62F9-8A0C-C1FD-A83A-0EB1421C7243">
+<createdBy>Vladi</createdBy>
+<createdTime>2026-05-07 01:53:08 UTC</createdTime>
+<ownerDesignName>Archivo</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="CRC_CONTRASENIAS" id="8935CDCB-9FDB-0787-B292-AAA93AA0F41E">
+<createdBy>Vladi</createdBy>
+<createdTime>2026-05-07 01:53:08 UTC</createdTime>
+<ownerDesignName>Archivo</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="CRC_CORREOS" id="DE4448A6-E06C-A88F-7327-9C3A14358501">
+<createdBy>Vladi</createdBy>
+<createdTime>2026-05-07 01:53:08 UTC</createdTime>
+<ownerDesignName>Archivo</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="CRC_ID" id="F2EE88F1-F587-5426-92CB-42CEC1E02BBA">
+<createdBy>Vladi</createdBy>
+<createdTime>2026-05-07 01:53:08 UTC</createdTime>
+<ownerDesignName>Archivo</ownerDesignName>
+<defaultValue>SYS_GUID()</defaultValue>
+</ColumnProxy>
+</columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="PK_CRC_ID" id="99A96264-4705-7C87-8CA3-0423E2FE2C4C">
+<createdBy>Vladi</createdBy>
+<createdTime>2026-05-07 01:53:08 UTC</createdTime>
+<ownerDesignName>Archivo</ownerDesignName>
+<schemaObject>D419BC83-C430-5114-5307-FC5BDD557635</schemaObject>
+<segment>2474C465-B14B-E9D1-C158-0569C525328F</segment>
+<tableSpace>95977398-EB2F-E220-BEB3-464B6037EC9C</tableSpace>
+</IndexProxy>
+</indexProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="FK_CLI_CRC" id="20704417-B044-FD47-AD5D-61A37B2B13C2">
+<createdBy>Vladi</createdBy>
+<createdTime>2026-05-07 01:53:08 UTC</createdTime>
+<ownerDesignName>Archivo</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="PK_CRC_ID" id="42545AD7-07FE-C6F9-981D-F6BD6551C36E">
+<createdBy>Vladi</createdBy>
+<createdTime>2026-05-07 01:53:08 UTC</createdTime>
+<ownerDesignName>Archivo</ownerDesignName>
+<segment>2474C465-B14B-E9D1-C158-0569C525328F</segment>
+<tableSpace>95977398-EB2F-E220-BEB3-464B6037EC9C</tableSpace>
+<existingIndex>99A96264-4705-7C87-8CA3-0423E2FE2C4C</existingIndex>
+<indexSegment>2474C465-B14B-E9D1-C158-0569C525328F</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev20c>

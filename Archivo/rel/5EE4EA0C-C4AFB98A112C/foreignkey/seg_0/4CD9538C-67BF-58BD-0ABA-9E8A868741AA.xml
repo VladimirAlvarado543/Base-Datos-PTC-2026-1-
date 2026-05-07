@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="4CD9538C-67BF-58BD-0ABA-9E8A868741AA" containerWithKeyObject="4BFDD71F-71C1-832D-EA97-94CC907FAECA" localFKIndex="5F2D7F78-4EFE-52AF-5ED3-2272314EEACD" name="FK_PED_DTP">
+<sourceConnName>PTC PRUEBA PTC 30</sourceConnName>
+<sourceObjSchema>PTCPRUEBASSONE</sourceObjSchema>
+<sourceObjName>FK_PED_DTP</sourceObjName>
+<createdBy>Vladi</createdBy>
+<createdTime>2026-05-07 01:53:08 UTC</createdTime>
+<ownerDesignName>Archivo</ownerDesignName>
+<referredTableLongName>PTCPRUEBASSONE.PEDIDO</referredTableLongName>
+<deleteRule>CASCADE</deleteRule>
+<referredTableID>07A5DB11-AE29-5479-78E6-5B12702C4D2C</referredTableID>
+<keyObject>5E724C44-23D7-DA26-E608-477E516EA2C6</keyObject>
+<referredKeyID>5E724C44-23D7-DA26-E608-477E516EA2C6</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>PED_ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

@@ -1,0 +1,26 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TriggerOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.TriggerOraclev10g" name="TRG_VALIDAR_CARRITO" directorySegmentName="seg_0" id="89EC403B-D972-4348-64E9-F33F2F178DEC">
+<sourceConnName>PTC PRUEBA PTC 30</sourceConnName>
+<sourceObjSchema>PTCPRUEBASSONE</sourceObjSchema>
+<sourceObjName>TRG_VALIDAR_CARRITO</sourceObjName>
+<createdBy>Vladi</createdBy>
+<createdTime>2026-05-07 01:53:08 UTC</createdTime>
+<ownerDesignName>Archivo</ownerDesignName>
+<actions>INSERT</actions>
+<body><![CDATA[DECLARE
+    V_ESTADO PEDIDO.PED_ESTADO_COMPRAS%TYPE;
+BEGIN
+    SELECT PED_ESTADO_COMPRAS
+    INTO V_ESTADO
+    FROM PEDIDO
+    WHERE PED_ID = :NEW.PED_ID;
+
+    IF V_ESTADO <> 'Carrito' THEN
+        RAISE_APPLICATION_ERROR(-20001, 'No se pueden agregar productos porque el pedido no esta en estado Carrito');
+    END IF;
+END;
+]]></body>
+<triggerTime>BEFORE</triggerTime>
+<owner>DFB578C8-CBE6-A105-2017-59DAD82A0EC4</owner>
+<table>4BFDD71F-71C1-832D-EA97-94CC907FAECA</table>
+</TriggerOraclev10g>

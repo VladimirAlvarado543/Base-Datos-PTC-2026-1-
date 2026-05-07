@@ -1,0 +1,63 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev20c class="oracle.dbtools.crest.model.design.storage.oracle.v20c.TableProxyOraclev20c" name="CATEGORIA_TEMATICA" directorySegmentName="seg_0" id="8A7752DF-6960-6527-2FC3-1E3194710093">
+<createdBy>Vladi</createdBy>
+<createdTime>2026-05-07 01:53:08 UTC</createdTime>
+<ownerDesignName>Archivo</ownerDesignName>
+<schemaObject>D419BC83-C430-5114-5307-FC5BDD557635</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>2A04FA98-DA11-804A-0BA1-3AC3BC70CB76</segment>
+<tableSpace>95977398-EB2F-E220-BEB3-464B6037EC9C</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<inMemory>NO</inMemory>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="CTT_ID" id="789AE49B-C321-A5B9-30E4-1C0B3481AC04">
+<createdBy>Vladi</createdBy>
+<createdTime>2026-05-07 01:53:08 UTC</createdTime>
+<ownerDesignName>Archivo</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="CTT_NOMBRES" id="82C9EBD3-297E-5606-819D-D3F177482FF7">
+<createdBy>Vladi</createdBy>
+<createdTime>2026-05-07 01:53:08 UTC</createdTime>
+<ownerDesignName>Archivo</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="PK_CTT_ID" id="26712102-44F0-F95F-AE37-881186384E66">
+<createdBy>Vladi</createdBy>
+<createdTime>2026-05-07 01:53:08 UTC</createdTime>
+<ownerDesignName>Archivo</ownerDesignName>
+<schemaObject>D419BC83-C430-5114-5307-FC5BDD557635</schemaObject>
+<segment>2474C465-B14B-E9D1-C158-0569C525328F</segment>
+<tableSpace>95977398-EB2F-E220-BEB3-464B6037EC9C</tableSpace>
+</IndexProxy>
+</indexProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="PK_CTT_ID" id="AF4E8975-93AC-991C-F8DF-1AEB86D57F48">
+<createdBy>Vladi</createdBy>
+<createdTime>2026-05-07 01:53:08 UTC</createdTime>
+<ownerDesignName>Archivo</ownerDesignName>
+<segment>2474C465-B14B-E9D1-C158-0569C525328F</segment>
+<tableSpace>95977398-EB2F-E220-BEB3-464B6037EC9C</tableSpace>
+<existingIndex>26712102-44F0-F95F-AE37-881186384E66</existingIndex>
+<indexSegment>2474C465-B14B-E9D1-C158-0569C525328F</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</PrimaryKey>
+</primaryKeys>
+<uniqueKeys>
+<UniqueKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.UniqueOraclev10g" name="CATEGORIA_TEMATICA_CTT_NOMBRES_UN" id="88AC86D2-F6F8-364C-853B-3EBB8020A946">
+<createdBy>Vladi</createdBy>
+<createdTime>2026-05-07 01:53:08 UTC</createdTime>
+<ownerDesignName>Archivo</ownerDesignName>
+<schemaObject>D419BC83-C430-5114-5307-FC5BDD557635</schemaObject>
+<segment>2474C465-B14B-E9D1-C158-0569C525328F</segment>
+<tableSpace>95977398-EB2F-E220-BEB3-464B6037EC9C</tableSpace>
+<indexSegment>2474C465-B14B-E9D1-C158-0569C525328F</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</UniqueKey>
+</uniqueKeys>
+</TableProxyOraclev20c>

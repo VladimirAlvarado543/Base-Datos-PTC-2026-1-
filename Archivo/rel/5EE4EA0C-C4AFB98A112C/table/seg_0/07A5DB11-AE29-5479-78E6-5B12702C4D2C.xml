@@ -1,0 +1,212 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="07A5DB11-AE29-5479-78E6-5B12702C4D2C" schemaObject="D419BC83-C430-5114-5307-FC5BDD557635" name="PEDIDO">
+<sourceConnName>PTC PRUEBA PTC 30</sourceConnName>
+<sourceObjSchema>PTCPRUEBASSONE</sourceObjSchema>
+<sourceObjName>PEDIDO</sourceObjName>
+<createdBy>Vladi</createdBy>
+<createdTime>2026-05-07 01:53:08 UTC</createdTime>
+<ownerDesignName>Archivo</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="PED_ID" id="23DAC5CB-4E27-72FB-1289-20021EC3D9F9">
+<sourceConnName>PTC PRUEBA PTC 30</sourceConnName>
+<sourceObjSchema>PEDIDO</sourceObjSchema>
+<sourceObjName>PED_ID</sourceObjName>
+<createdBy>Vladi</createdBy>
+<createdTime>2026-05-07 01:53:08 UTC</createdTime>
+<commentInRDBMS><![CDATA[Llave primaria de la tabla pedido]]></commentInRDBMS>
+<ownerDesignName>Archivo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PED_FECHAS" id="5E1E6CE8-7BC8-685E-D3A4-69C4CF1F3901">
+<sourceConnName>PTC PRUEBA PTC 30</sourceConnName>
+<sourceObjSchema>PEDIDO</sourceObjSchema>
+<sourceObjName>PED_FECHAS</sourceObjName>
+<createdBy>Vladi</createdBy>
+<createdTime>2026-05-07 01:53:08 UTC</createdTime>
+<commentInRDBMS><![CDATA[Fecha en que se entrega el pedido]]></commentInRDBMS>
+<ownerDesignName>Archivo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PED_PRECIO_TOTALES" id="0D6A315E-4544-9789-EBE1-0B837D90993C">
+<sourceConnName>PTC PRUEBA PTC 30</sourceConnName>
+<sourceObjSchema>PEDIDO</sourceObjSchema>
+<sourceObjName>PED_PRECIO_TOTALES</sourceObjName>
+<createdBy>Vladi</createdBy>
+<createdTime>2026-05-07 01:53:08 UTC</createdTime>
+<commentInRDBMS><![CDATA[Precio total del pedido]]></commentInRDBMS>
+<ownerDesignName>Archivo</ownerDesignName>
+<constraintName>SYS_C008543</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="PED_PRECIO_TOTALES&gt;=0"/>
+<implementationDef dbType="Oracle Database 21c" definition="PED_PRECIO_TOTALES&gt;=0"/>
+</checkConstraint>
+<defaultValue>0</defaultValue>
+<ownDataTypeParameters>,10,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PED_TOTAL_DESCUENTOS" id="566DD49D-55DC-8038-E75E-037AC90D215A">
+<sourceConnName>PTC PRUEBA PTC 30</sourceConnName>
+<sourceObjSchema>PEDIDO</sourceObjSchema>
+<sourceObjName>PED_TOTAL_DESCUENTOS</sourceObjName>
+<createdBy>Vladi</createdBy>
+<createdTime>2026-05-07 01:53:08 UTC</createdTime>
+<commentInRDBMS><![CDATA[Precio total del pedido aplicando los descuentos]]></commentInRDBMS>
+<ownerDesignName>Archivo</ownerDesignName>
+<constraintName>SYS_C008544</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="PED_TOTAL_DESCUENTOS&gt;=0"/>
+<implementationDef dbType="Oracle Database 21c" definition="PED_TOTAL_DESCUENTOS&gt;=0"/>
+</checkConstraint>
+<defaultValue>0</defaultValue>
+<ownDataTypeParameters>,10,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PED_ESTADO_COMPRAS" id="EF93E768-16C3-88F8-945D-602C03CE9FC1">
+<sourceConnName>PTC PRUEBA PTC 30</sourceConnName>
+<sourceObjSchema>PEDIDO</sourceObjSchema>
+<sourceObjName>PED_ESTADO_COMPRAS</sourceObjName>
+<createdBy>Vladi</createdBy>
+<createdTime>2026-05-07 01:53:08 UTC</createdTime>
+<commentInRDBMS><![CDATA[Estado de compra, se utilizara esta misma tabla para el carrito de compras, una vez el cliente confirme la compra debera esperar a que el pedido sea aprovado por un administrador]]></commentInRDBMS>
+<ownerDesignName>Archivo</ownerDesignName>
+<constraintName>CK_PED_ESTADO</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>24 BYTE</dataTypeSize>
+<listOfValues>
+<valueDef value="&apos;Aprobado&apos;" description=""/>
+<valueDef value="&apos;Carrito&apos;" description=""/>
+<valueDef value="&apos;Pendiente&apos;" description=""/>
+</listOfValues>
+<ownDataTypeParameters>24 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PED_SOLICITUDES" id="484B06DA-0390-60A3-355C-262218292433">
+<sourceConnName>PTC PRUEBA PTC 30</sourceConnName>
+<sourceObjSchema>PEDIDO</sourceObjSchema>
+<sourceObjName>PED_SOLICITUDES</sourceObjName>
+<createdBy>Vladi</createdBy>
+<createdTime>2026-05-07 01:53:08 UTC</createdTime>
+<commentInRDBMS><![CDATA[Estado de la solicitud de aprovacion, ya sea aprovado o pendiente]]></commentInRDBMS>
+<ownerDesignName>Archivo</ownerDesignName>
+<constraintName>CK_PED_SOLICITUD</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>24 BYTE</dataTypeSize>
+<listOfValues>
+<valueDef value="&apos;Aprobado&apos;" description=""/>
+<valueDef value="&apos;Pendiente&apos;" description=""/>
+</listOfValues>
+<ownDataTypeParameters>24 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="UBC_ID" id="C4F781AF-C393-C53C-38F5-4CC0C6050344">
+<sourceConnName>PTC PRUEBA PTC 30</sourceConnName>
+<sourceObjSchema>PEDIDO</sourceObjSchema>
+<sourceObjName>UBC_ID</sourceObjName>
+<createdBy>Vladi</createdBy>
+<createdTime>2026-05-07 01:53:08 UTC</createdTime>
+<commentInRDBMS><![CDATA[Llave foranea a la tabla Ubicacion]]></commentInRDBMS>
+<ownerDesignName>Archivo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="23AD458E-37A4-14C3-E1F3-C920770C4B7C" referredColumn="AA6A3BEA-E24B-903F-FA19-96D4A43A8DD6"/>
+</associations>
+</Column>
+<Column name="USR_ID" id="113ADBBB-2D49-BD32-2C90-40072B1D28B3">
+<sourceConnName>PTC PRUEBA PTC 30</sourceConnName>
+<sourceObjSchema>PEDIDO</sourceObjSchema>
+<sourceObjName>USR_ID</sourceObjName>
+<createdBy>Vladi</createdBy>
+<createdTime>2026-05-07 01:53:08 UTC</createdTime>
+<commentInRDBMS><![CDATA[Llave foranea a la tabla Usuario]]></commentInRDBMS>
+<ownerDesignName>Archivo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B35DEAFB-FA92-FE8E-A760-349CBF7D153E" referredColumn="AC6D037C-72CD-90BD-A9F4-2787B7BB4FCE"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="5E724C44-23D7-DA26-E608-477E516EA2C6" name="PK_PED_ID">
+<sourceConnName>PTC PRUEBA PTC 30</sourceConnName>
+<sourceObjSchema>PTCPRUEBASSONE</sourceObjSchema>
+<sourceObjName>PK_PED_ID</sourceObjName>
+<createdBy>Vladi</createdBy>
+<createdTime>2026-05-07 01:53:08 UTC</createdTime>
+<ownerDesignName>Archivo</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="23DAC5CB-4E27-72FB-1289-20021EC3D9F9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="94C77F6D-EC02-D694-27AF-69D9EF7C383A" schemaObject="D419BC83-C430-5114-5307-FC5BDD557635" name="PK_PED_ID">
+<sourceConnName>PTC PRUEBA PTC 30</sourceConnName>
+<sourceObjSchema>PTCPRUEBASSONE</sourceObjSchema>
+<sourceObjName>PK_PED_ID</sourceObjName>
+<createdBy>Vladi</createdBy>
+<createdTime>2026-05-07 01:53:08 UTC</createdTime>
+<ownerDesignName>Archivo</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="23DAC5CB-4E27-72FB-1289-20021EC3D9F9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A19DDB50-72DB-4206-4F86-316D63441AE1" name="FK_UBC_PED">
+<createdBy>Vladi</createdBy>
+<createdTime>2026-05-07 01:53:08 UTC</createdTime>
+<ownerDesignName>Archivo</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C4F781AF-C393-C53C-38F5-4CC0C6050344"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0F7B078E-D4FE-7CB7-32D8-494CE9F24D87" name="FK_USR_PED">
+<createdBy>Vladi</createdBy>
+<createdTime>2026-05-07 01:53:08 UTC</createdTime>
+<ownerDesignName>Archivo</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="113ADBBB-2D49-BD32-2C90-40072B1D28B3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

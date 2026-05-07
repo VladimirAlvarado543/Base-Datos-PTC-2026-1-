@@ -1,0 +1,7 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<SchemaObject class="oracle.dbtools.crest.model.design.relational.SchemaObject" name="PTCPRUEBASSONE" directorySegmentName="seg_0" id="D419BC83-C430-5114-5307-FC5BDD557635">
+<createdBy>Vladi</createdBy>
+<createdTime>2026-05-07 01:53:08 UTC</createdTime>
+<ownerDesignName>Archivo</ownerDesignName>
+<importedID>16C52B2E-34E6-264D-826E-D090C5C4DC52</importedID>
+</SchemaObject>

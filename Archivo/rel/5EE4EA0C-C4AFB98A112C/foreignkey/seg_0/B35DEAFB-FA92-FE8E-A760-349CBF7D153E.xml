@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="B35DEAFB-FA92-FE8E-A760-349CBF7D153E" containerWithKeyObject="07A5DB11-AE29-5479-78E6-5B12702C4D2C" localFKIndex="0F7B078E-D4FE-7CB7-32D8-494CE9F24D87" name="FK_USR_PED">
+<sourceConnName>PTC PRUEBA PTC 30</sourceConnName>
+<sourceObjSchema>PTCPRUEBASSONE</sourceObjSchema>
+<sourceObjName>FK_USR_PED</sourceObjName>
+<createdBy>Vladi</createdBy>
+<createdTime>2026-05-07 01:53:08 UTC</createdTime>
+<ownerDesignName>Archivo</ownerDesignName>
+<referredTableLongName>PTCPRUEBASSONE.USUARIO</referredTableLongName>
+<deleteRule>CASCADE</deleteRule>
+<referredTableID>238F3090-62E9-2EEC-43D1-218404DC9F48</referredTableID>
+<keyObject>F8D0F358-BA6D-6B1C-B7DD-E37B6E49F0FC</keyObject>
+<referredKeyID>F8D0F358-BA6D-6B1C-B7DD-E37B6E49F0FC</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>USR_ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>
